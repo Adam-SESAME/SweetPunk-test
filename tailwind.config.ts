@@ -12,9 +12,23 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "hero-background": "url('/hero-bg.jpeg')",
+      },
+      rotate: {
+        'x': '-45deg',
+      },
+      filter: {
+        'brightness-0': 'brightness(0)', 
+        'grayscale': 'grayscale(100%)',
+        'neutral': 'brightness(100%)',
+      },
+      fontFamily: {
+        'bebas-neue': ['Bebas Neue', 'sans-serif'],
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('daisyui'),
+  ],
 };
 export default config;
