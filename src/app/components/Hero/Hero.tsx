@@ -25,7 +25,30 @@ const Hero: React.FC = () => {
         </p>
       </div>
       <div className="absolute top-[15%] right-[5%] rounded-full w-[100px] h-[100px] bg-[#DD1B5E]">
-        <p>LE LIVE NEW ACTUS EVENTS</p>
+        {/* <p>LE LIVE NEW ACTUS EVENTS</p> */}
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <path
+            id="circlePath"
+            fill="none"
+            stroke="none"
+            d="
+                M 20, 50
+                a 30,30 0 1,1 60,0
+                a 30,30 0 1,1 -60,0
+              "
+          />
+          <text
+            id="text"
+            font-family="Bebas Neue"
+            font-size="12"
+            font-weight="bold"
+            fill="white"
+          >
+            <textPath id="textPath" href="#circlePath">
+              Le Live · News · Actus · Events ---------------------
+            </textPath>
+          </text>
+        </svg>
       </div>
       <div
         className="animation flex flex-col absolute top-[250px] w-full"
