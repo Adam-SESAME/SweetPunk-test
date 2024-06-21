@@ -22,9 +22,11 @@ const config: Config = {
         'grayscale': 'grayscale(100%)',
         'neutral': 'brightness(100%)',
       },
-      fontFamily: {
-        'bebas-neue': ['Bebas Neue', 'sans-serif'],
-      },
+    },
+    fontFamily: {
+      bebas: ['Bebas Neue', 'sans-serif'],
+      oswald: ['Oswald', 'sans-serif'],
+      cormorant: ["Cormorant Upright", "serif"],
     },
   },
   plugins: [

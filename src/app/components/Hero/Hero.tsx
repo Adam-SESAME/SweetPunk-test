@@ -13,14 +13,14 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <section className="bg-black w-full min-h-[100vh] bg-hero-background bg-cover relative">
+    <section className="bg-black w-full min-h-[120vh] bg-hero-background bg-cover relative">
       <div
         className="absolute top-8 left-8 bg-white rotate-x w-[100px] h-[100px] flex justify-center items-center"
         style={{
           borderRadius: "50% 50% 0 50%",
         }}
       >
-        <p className="text-black text-xs font-bold rotate-45 text-left w-[60px]">
+        <p className="text-black text-xs font-bold font-oswald rotate-45 text-left w-[60px]">
           FRANCO - AMERICAN CULTURAL FUND
         </p>
       </div>
