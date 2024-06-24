@@ -3,6 +3,7 @@ import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import About from "./components/About/About";
 import Quotes from "./components/Quotes/Quotes";
+import Jobs from "./components/Jobs/Jobs";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Hero />
       <About />
       <Quotes />
+      <Jobs />
     </>
   );
 }

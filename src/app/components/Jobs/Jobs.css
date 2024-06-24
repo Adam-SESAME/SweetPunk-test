@@ -1,0 +1,78 @@
+.title {
+    position: relative;
+    font-size: 80px;
+    font-weight: 700;
+    color: transparent;
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.5px white; /* For Safari compatibility */
+    overflow: hidden; /* Prevents the scrollbar from appearing on hover */
+  }
+  
+  .title .outer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    color: white;
+    overflow: hidden;
+    transform: translateY(100%);
+  }
+  
+  .title .inner {
+    display: inline-block;
+    transform: translateY(-100%);
+  }
+  
+  .title .outer,
+  .title .inner {
+    transition: transform 0.95s cubic-bezier(0.29, 0.73, 0.74, 1.02);
+  }
+  
+  .title:hover .outer,
+  .title:hover .inner {
+    transform: translateY(0);
+  }
+
+
+  .title2 {
+    position: relative;
+    font-size: 30px;
+    font-weight: 700;
+    color: transparent;
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.5px white; /* For Safari compatibility */
+    overflow: hidden; /* Prevents the scrollbar from appearing on hover */
+  }
+  
+  .title2 .outer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    color: white;
+    overflow: hidden;
+    transform: translateY(100%);
+  }
+  
+  .title2 .inner {
+    display: inline-block;
+    transform: translateY(-100%);
+  }
+  
+  .title2 .outer,
+  .title2 .inner {
+    transition: transform 0.95s cubic-bezier(0.29, 0.73, 0.74, 1.02);
+  }
+  
+  .title2:hover .outer,
+  .title2:hover .inner {
+    transform: translateY(0);
+  }
+
+
+  
+
+
+  
