@@ -4,8 +4,8 @@
     font-weight: 700;
     color: transparent;
     text-transform: uppercase;
-    -webkit-text-stroke: 0.5px white; /* For Safari compatibility */
-    overflow: hidden; /* Prevents the scrollbar from appearing on hover */
+    -webkit-text-stroke: 0.5px white;
+    overflow: hidden;
   }
   
   .title .outer {
@@ -41,8 +41,8 @@
     font-weight: 700;
     color: transparent;
     text-transform: uppercase;
-    -webkit-text-stroke: 0.5px white; /* For Safari compatibility */
-    overflow: hidden; /* Prevents the scrollbar from appearing on hover */
+    -webkit-text-stroke: 0.5px white;
+    overflow: hidden;
   }
   
   .title2 .outer {
