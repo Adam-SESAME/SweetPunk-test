@@ -6,7 +6,7 @@ import NameCard from "./NameCard";
 const Jobs = () => {
   return (
     <section className="bg-[#1D1D1D] min-h-screen flex flex-col items-center justify-center">
-      <div className="flex flex-row pt-60 items-center justify-center gap-8">
+      <div className="flex flex-row pt-60 items-center justify-center gap-8 xl:pt-40">
         <img className="h-[60px] md:h-[40px]" src="dga-logo.png" alt="" />
         <img className="h-[60px] md:h-[40px]" src="mpa-logo.png" alt="" />
         <img className="h-[60px] md:h-[40px]" src="wga-logo.png" alt="" />
@@ -38,6 +38,11 @@ const Jobs = () => {
         <NameCard title="MICHAEL MANN" />
         <NameCard title="ANDREA BERLOFF" />
         <NameCard title="CHARLES RIVKIN" />
+      </div>
+      <div className="flex flex-col items-center mt-8">
+        <button className="font-oswald font-light bg-[#1F1F1E] text-white w-[250px] py-4 border border-white text-lg hover:bg-white hover:text-black hover:shadow-md transition duration-300 ease-in-out">
+          QUI SOMMES-NOUS?
+        </button>
       </div>
     </section>
   );

@@ -10,6 +10,12 @@ const Quotes = () => {
     image_url: string;
   }
 
+  interface Slide {
+    image: string;
+    bigText: string;
+    smallText: string;
+  }
+
   const [citationsData, setCitationsData] = useState<Citation[]>([]);
 
   useEffect(() => {
@@ -24,7 +30,7 @@ const Quotes = () => {
       });
   }, []);
 
-  const slides = citationsData.map((citation, index) => ({
+  const slides = citationsData.map((citation: Citation) => ({
     image: citation.image_url || "default-image.jpg",
     bigText: citation.original_quote || "Default Big Text",
     smallText: citation.translated_quote || "Default Small Text",
@@ -44,56 +50,44 @@ const Quotes = () => {
 
     setTimeout(() => {
       setShowSmallText(true);
-    }, 500);
+    }, 1000);
   }, [activeSlideIndex]);
 
   const handleSlideChange = (index: number) => {
     setActiveSlideIndex(index);
   };
 
-  const test = () => {
-    console.log(activeSlideIndex, "activeslideindex");
-    console.log(slides[activeSlideIndex].image, "image");
-    console.log(slides[activeSlideIndex].bigText, "bigtext");
-    console.log(slides[activeSlideIndex].smallText, "smalltext");
-
-    return <>hello</>;
-  };
-
   const displaySlides = () => {
-    if (slides !== null && slides.length > 0) {
+    if (slides?.length > 0) {
       return (
         <div className="flex flex-col justify-center items-start w-full">
           <div>
-            <div className="absolute bottom-[-170px] left-[80px]">
+            <div className="absolute top-[100px] right-[25px] md:bottom-[-170px] md:left-[80px] xl:top-[250px]">
               <img
                 src={slides[activeSlideIndex].image}
                 alt=""
-                className="h-[440px] w-[385px] max-h-full z-10 "
+                className="h-[350px] md:h-[440px] md:w-[385px] xl:h-[550px] xl:w-[485px] max-h-full z-10"
               />
             </div>
             <div
-              className={`text-white z-20 absolute top-[80px] w-[550px] right-[200px] ${
+              className={`text-white z-20 absolute top-[70px] right-[20px] max-w-[340px] md:top-[80px] md:max-w-[550px] md:right-[200px] xl:max-w-[1000px] xl:top-[200px] ${
                 showBigText ? "opacity-100" : "opacity-0"
               } transition-opacity duration-500 ease-out`}
             >
-              <p className="font-oswald text-[100px] absolute left-[-40px] top-[-50px]">
+              <p className="font-oswald text-[80px] absolute left-[-30px] md:left-[-40px] top-[-50px] ">
                 "
               </p>
-              <h2 className="text-5xl font-bold font-oswald pb-4">
-                {slides[activeSlideIndex].bigText.split("").map((char, i) => (
-                  <span
-                    key={i}
-                    style={{ display: `${showBigText ? "inline" : "none"}` }}
-                  >
-                    {char}
-                  </span>
-                ))}
+
+              <h2 className="text-lg md:text-5xl xl:text-7xl font-bold font-oswald pb-4 ">
+                {slides[activeSlideIndex].bigText}
               </h2>
-              <hr className="pt-2 opacity-50 w-[15%]" />
-              <p className="font-light text-lg font-oswald w-[350px]">
-                {showSmallText ? slides[activeSlideIndex].smallText : ""}
-              </p>
+
+              <div className="">
+                <hr className="pt-2 opacity-50 w-[15%]" />
+                <p className="font-light text-sm md:text-lg font-oswald w-[350px]">
+                  {showSmallText ? slides[activeSlideIndex].smallText : ""}
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -102,10 +96,10 @@ const Quotes = () => {
   };
 
   const displayDots = () => {
-    if (slides !== null && slides.length > 0) {
+    if (slides?.length > 0) {
       return (
         <div className="absolute bottom-12 right-8 flex space-x-2">
-          {slides.map((slide, index) => (
+          {slides.map((slide: Slide, index) => (
             <button
               key={index}
               onClick={() => handleSlideChange(index)}

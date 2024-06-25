@@ -38,7 +38,7 @@ function About() {
         </p>
       </div>
       <div className="flex flex-col md:flex-row items-center md:items-end gap-4">
-        <p className="text-[35px] md:text-[72px] xl:text-[100px]">
+        <p className="text-[35px] md:text-[72px] xl:text-[100px] text-center">
           des Auteurs, Compositeurs,
         </p>
         <img

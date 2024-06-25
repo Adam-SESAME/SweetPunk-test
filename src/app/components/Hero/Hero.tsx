@@ -25,7 +25,6 @@ const Hero: React.FC = () => {
         </p>
       </div>
       <div className="absolute top-[15%] right-[5%] rounded-full w-[100px] h-[100px] bg-[#DD1B5E]">
-        {/* <p>LE LIVE NEW ACTUS EVENTS</p> */}
         <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
           <path
             id="circlePath"
@@ -55,7 +54,7 @@ const Hero: React.FC = () => {
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
         style={{
-          overflow: "hidden", // Ensure overflow is hidden to clip the animated images
+          overflow: "hidden",
         }}
       >
         <img
@@ -63,7 +62,7 @@ const Hero: React.FC = () => {
           src="text1.svg"
           alt=""
           style={{
-            transform: isHovered ? "translateX(50%)" : "translateX(0)", // Move to 50% of container width
+            transform: isHovered ? "translateX(50%)" : "translateX(0)",
             transition: "transform 0.3s ease",
           }}
         />
@@ -72,7 +71,7 @@ const Hero: React.FC = () => {
           src="text2.svg"
           alt=""
           style={{
-            transform: isHovered ? "translateX(-50%)" : "translateX(0)", // Move to -50% of container width
+            transform: isHovered ? "translateX(-50%)" : "translateX(0)",
             transition: "transform 0.3s ease",
           }}
         />
