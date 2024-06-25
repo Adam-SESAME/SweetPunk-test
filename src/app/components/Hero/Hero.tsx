@@ -39,9 +39,9 @@ const Hero: React.FC = () => {
           />
           <text
             id="text"
-            font-family="Bebas Neue"
-            font-size="12"
-            font-weight="bold"
+            fontFamily="Bebas Neue"
+            fontSize="12"
+            fontWeight="bold"
             fill="white"
           >
             <textPath id="textPath" href="#circlePath">
