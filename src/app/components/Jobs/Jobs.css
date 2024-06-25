@@ -71,6 +71,17 @@
     transform: translateY(0);
   }
 
+  @media screen and (max-width: 600px) {
+    .title {
+      font-size: 60px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    .title {
+      font-size: 120px;
+    }
+  }
 
   
 
