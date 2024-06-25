@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 
-const Hero: React.FC = () => {
+const Hero = ({ id }: { id: string }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleMouseEnter = () => {
@@ -13,7 +13,10 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <section className="bg-black w-full min-h-[100vh] md:min-h-[120vh] bg-hero-background bg-cover relative">
+    <section
+      id={id}
+      className="bg-black w-full min-h-[100vh] md:min-h-[120vh] bg-hero-background bg-cover relative"
+    >
       <div
         className="absolute top-8 left-8 bg-white rotate-x w-[100px] h-[100px] flex justify-center items-center"
         style={{

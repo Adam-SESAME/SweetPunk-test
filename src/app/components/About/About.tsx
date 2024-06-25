@@ -1,8 +1,11 @@
 import React from "react";
 
-function About() {
+const About = ({ id }: { id: string }) => {
   return (
-    <section className="w-full text-white font-oswald bg-[#1F1F1E] min-h-[100vh] md:min-h-[140vh] xl:min-h-[100vh] font-bold text-xl md:text-7xl flex flex-col gap-4 md:pl-8 px-4 pt-32">
+    <section
+      id={id}
+      className="w-full text-white font-oswald bg-[#1F1F1E] min-h-[100vh] md:min-h-[140vh] xl:min-h-[100vh] font-bold text-xl md:text-7xl flex flex-col gap-4 md:pl-8 px-4 pt-32"
+    >
       <div className="flex flex-col md:flex-row items-center md:items-end gap-4">
         <p className="text-[35px] md:text-[72px] xl:text-[100px]">
           Le Fonds Culturel
@@ -68,6 +71,6 @@ function About() {
       </div>
     </section>
   );
-}
+};
 
 export default About;

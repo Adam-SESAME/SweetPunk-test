@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-const Quotes = () => {
+const Quotes = ({ id }: { id: string }) => {
   interface Citation {
     id: number;
     original_quote: string;
@@ -123,7 +123,10 @@ const Quotes = () => {
   };
 
   return (
-    <section className="w-full min-h-[80vh] bg-[#DD1B5E] relative flex justify-center items-center pt-[80px] pl-[100px]">
+    <section
+      id={id}
+      className="w-full min-h-[80vh] bg-[#DD1B5E] relative flex justify-center items-center pt-[80px] pl-[100px]"
+    >
       {displaySlides()}
       {displayDots()}
     </section>
