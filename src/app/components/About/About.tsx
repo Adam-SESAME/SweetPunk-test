@@ -11,7 +11,7 @@ const About = ({ id }: { id: string }) => {
           Le Fonds Culturel
         </p>
         <img
-          className="hidden md:block mb-[0.20rem] h-[30px] w-[60px] md:w-[100px] md:h-[40px] xl:w-[120px] xl:h-[50px]"
+          className="hidden md:block mb-[0.20rem] h-[30px] w-[60px] md:w-[100px] md:h-[40px] 2xl:w-[120px] 2xl:h-[50px]"
           src="beach.jpg"
           alt=""
         />
@@ -19,7 +19,7 @@ const About = ({ id }: { id: string }) => {
       <div className="flex flex-col md:flex-row items-center md:items-end gap-4">
         <p className="text-[35px] md:text-[72px] 2xl:text-[100px]">Franco</p>
         <img
-          className="hidden md:block h-[30px] w-[60px] md:w-[80px] md:h-[40px] mb-[0.20rem] xl:w-[120px] xl:h-[50px]"
+          className="hidden md:block h-[30px] w-[60px] md:w-[80px] md:h-[40px] mb-[0.20rem] 2xl:w-[120px] 2xl:h-[50px]"
           src="camera.jpg"
           alt=""
         />
@@ -32,7 +32,7 @@ const About = ({ id }: { id: string }) => {
           collaboration
         </p>
         <img
-          className="hidden md:block h-[30px] w-[60px] md:w-[80px] md:h-[40px] mb-[0.20rem] xl:w-[120px] xl:h-[50px]"
+          className="hidden md:block h-[30px] w-[60px] md:w-[80px] md:h-[40px] mb-[0.20rem] 2xl:w-[120px] 2xl:h-[50px]"
           src="hollywood.jpg"
           alt=""
         />
@@ -45,7 +45,7 @@ const About = ({ id }: { id: string }) => {
           des Auteurs, Compositeurs,
         </p>
         <img
-          className="hidden md:block h-[30px] w-[60px] md:w-[80px] md:h-[40px] mb-[0.20rem] xl:w-[120px] xl:h-[50px]"
+          className="hidden md:block h-[30px] w-[60px] md:w-[80px] md:h-[40px] mb-[0.20rem] 2xl:w-[120px] 2xl:h-[50px]"
           src="shadow.jpg"
           alt=""
         />
