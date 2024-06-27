@@ -10,17 +10,17 @@ const Jobs = ({ id }: { id: string }) => {
       className="bg-[#1D1D1D] min-h-screen flex flex-col items-center justify-center pb-[40px] md:pb-[150px]"
     >
       <div className="flex flex-row pt-60 items-center justify-center gap-8 xl:pt-40">
-        <img className="h-[60px] md:h-[40px]" src="dga-logo.png" alt="" />
-        <img className="h-[60px] md:h-[40px]" src="mpa-logo.png" alt="" />
-        <img className="h-[60px] md:h-[40px]" src="wga-logo.png" alt="" />
-        <img className="h-[60px] md:h-[40px]" src="sacem-logo.png" alt="" />
+        <img className="h-[50px] md:h-[40px]" src="dga-logo.png" alt="" />
+        <img className="h-[50px] md:h-[40px]" src="mpa-logo.png" alt="" />
+        <img className="h-[50px] md:h-[40px]" src="wga-logo.png" alt="" />
+        <img className="h-[50px] md:h-[40px]" src="sacem-logo.png" alt="" />
       </div>
-      <p className="text-lg md:text-xs font-light text-white font-oswald text-center pt-[20px] md:max-w-[35%]">
+      <p className="text-3xl px-6 md:px-0 md:text-xs font-light text-white font-oswald text-center pt-[20px] md:max-w-[35%]">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dicta
         laboriosam, atque fugiat officia nobis nam perspiciatis placeat error
         reprehenderit.
       </p>
-      <div className="flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center justify-center max-w-[100vw]">
         <JobCard title="PRODUCTEUR" description="PRODUCER" />
         <JobCard title="SCENARISTE" description="SCREENWRITER" />
         <JobCard title="DOUBLAGE" description="DUBBING" />
