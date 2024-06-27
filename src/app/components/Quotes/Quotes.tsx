@@ -20,7 +20,7 @@ const Quotes = ({ id }: { id: string }) => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3001/citations")
+      .get("https://sweetpunk-test-backend.onrender.com/citations")
       .then((response) => {
         console.log(response.data);
         setCitationsData(response.data);
