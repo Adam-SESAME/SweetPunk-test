@@ -1,4 +1,3 @@
-// TitleWithHighlight.tsx
 import React from "react";
 
 interface NameCardProps {
