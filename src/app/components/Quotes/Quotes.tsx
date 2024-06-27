@@ -66,11 +66,11 @@ const Quotes = ({ id }: { id: string }) => {
               <img
                 src={slides[activeSlideIndex].image}
                 alt=""
-                className="h-[350px] md:h-[440px] md:w-[385px] xl:h-[550px] xl:w-[485px] max-h-full z-10"
+                className="h-[450px] md:h-[440px] md:w-[385px] xl:h-[550px] xl:w-[485px] max-h-full z-10"
               />
             </div>
             <div
-              className={`text-white z-20 absolute top-[70px] right-[20px] max-w-[340px] md:top-[80px] md:max-w-[550px] md:right-[200px] xl:max-w-[1000px] xl:top-[200px] ${
+              className={`text-white z-20 absolute top-[70px] right-[20px] max-w-[340px] md:top-[80px] md:right-0 md:left-[400px] lg:max-w-[550px] xl:max-w-[1000px] xl:top-[200px] ${
                 showBigText ? "opacity-100" : "opacity-0"
               } transition-opacity duration-500 ease-out`}
             >
@@ -78,7 +78,7 @@ const Quotes = ({ id }: { id: string }) => {
                 "
               </p>
 
-              <h2 className="text-lg md:text-5xl xl:text-7xl font-bold font-oswald pb-4 ">
+              <h2 className="text-lg md:text-3xl lg:6xl xl:text-7xl font-bold font-oswald pb-4 ">
                 {slides[activeSlideIndex].bigText}
               </h2>
 

@@ -5,7 +5,7 @@ const Footer = ({ id }: { id: string }) => {
     <>
       <section
         id={id}
-        className="flex flex-col gap-4 md:gap-0 md:flex-row justify-center md:justify-between bg-[#1D1D1D] p-8 border-t border-b border-white/10 "
+        className="flex flex-col gap-4 md:gap-4 md:flex-row justify-center md:justify-between bg-[#1D1D1D] p-8 border-t border-b border-white/10 "
       >
         <div className="flex flex-row gap-6 items-center justify-center ">
           <a href="">
@@ -21,7 +21,7 @@ const Footer = ({ id }: { id: string }) => {
             <img src="youtube.png" alt="" width={25} />
           </a>
         </div>
-        <div className="flex flex-col md:flex-row font-bold text-white font-oswald gap-2 md:gap-8 items-center">
+        <div className="flex flex-col md:whitespace-nowrap md:flex-row font-bold text-white font-oswald gap-2 md:gap-8 items-center">
           <a href="">
             <p>NOS PARTENAIRES</p>
           </a>
@@ -35,7 +35,7 @@ const Footer = ({ id }: { id: string }) => {
             <p>MENTIONS LEGALES</p>
           </a>
         </div>
-        <div className="flex flex-row font-oswald font-semibold gap-2 items-center w-[171px] justify-center m-auto md:m-0 md:justify-end">
+        <div className="flex flex-row font-oswald font-semibold gap-2 items-center md:w-[80px] w-[171px] justify-center m-auto md:m-0 md:justify-end">
           <p className="text-white">FR</p>
           <p className="text-white text-[15px] self-center">|</p>
           <p className="text-gray-500">EN</p>

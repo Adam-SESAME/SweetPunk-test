@@ -4,10 +4,10 @@ const About = ({ id }: { id: string }) => {
   return (
     <section
       id={id}
-      className="w-full text-white font-oswald bg-[#1F1F1E] min-h-[100vh] md:min-h-[140vh] xl:min-h-[100vh] font-bold text-xl md:text-7xl flex flex-col gap-4 md:pl-8 px-4 pt-32"
+      className="w-full text-white font-oswald bg-[#1F1F1E] font-bold text-xl pb-20 md:text-7xl flex flex-col gap-4 md:pl-8 px-4 pt-32"
     >
       <div className="flex flex-col md:flex-row items-center md:items-end gap-4">
-        <p className="text-[35px] md:text-[72px] xl:text-[100px]">
+        <p className="text-[35px] lg:text-[72px] 2xl:text-[90px]">
           Le Fonds Culturel
         </p>
         <img
@@ -17,18 +17,18 @@ const About = ({ id }: { id: string }) => {
         />
       </div>
       <div className="flex flex-col md:flex-row items-center md:items-end gap-4">
-        <p className="text-[35px] md:text-[72px] xl:text-[100px]">Franco</p>
+        <p className="text-[35px] lg:text-[72px] 2xl:text-[100px]">Franco</p>
         <img
           className="hidden md:block h-[30px] w-[60px] md:w-[80px] md:h-[40px] mb-[0.20rem] xl:w-[120px] xl:h-[50px]"
           src="camera.jpg"
           alt=""
         />
-        <p className="text-[35px] md:text-[72px] xl:text-[100px]">
+        <p className="text-[35px] lg:text-[72px] 2xl:text-[100px]">
           Américain est une
         </p>
       </div>
       <div className="flex flex-col md:flex-row items-center md:items-end gap-4">
-        <p className="text-[35px] md:text-[72px] xl:text-[100px]">
+        <p className="text-[35px] lg:text-[72px] 2xl:text-[100px]">
           collaboration
         </p>
         <img
@@ -36,12 +36,12 @@ const About = ({ id }: { id: string }) => {
           src="hollywood.jpg"
           alt=""
         />
-        <p className="text-[35px] md:text-[72px] xl:text-[100px]">
+        <p className="text-[35px] lg:text-[72px] 2xl:text-[100px]">
           entre la Société
         </p>
       </div>
       <div className="flex flex-col md:flex-row items-center md:items-end gap-4">
-        <p className="text-[35px] md:text-[72px] xl:text-[100px] text-center">
+        <p className="text-[35px] lg:text-[72px] 2xl:text-[100px] text-center">
           des Auteurs, Compositeurs,
         </p>
         <img
@@ -50,8 +50,8 @@ const About = ({ id }: { id: string }) => {
           alt=""
         />
       </div>
-      <div className="flex flex-col md:flex-row items-center md:items-end md:gap-4">
-        <p className="text-[35px] md:text-[72px] xl:text-[100px]">
+      <div className="flex flex-col md:flex-row items-center md:items-end md:gap-4 md:items-baseline">
+        <p className="text-[35px] lg:text-[72px] 2xl:text-[100px]">
           et Editeurs de musique
         </p>
         <div className="w-full md:w-[200px] mt-6 flex flex-col gap-4 items-center md:items-start">
