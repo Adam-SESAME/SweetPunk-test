@@ -62,15 +62,15 @@ const Quotes = ({ id }: { id: string }) => {
       return (
         <div className="flex flex-col justify-center items-start w-full">
           <div>
-            <div className="absolute top-[100px] right-[25px] md:bottom-[-170px] md:left-[80px] xl:top-[250px]">
+            <div className="absolute top-[100px] right-[25px] md:bottom-[-170px] md:left-[80px] lg:top-[200px] xl:top-[160px]">
               <img
                 src={slides[activeSlideIndex].image}
                 alt=""
-                className="h-[450px] md:h-[440px] md:w-[385px] xl:h-[550px] xl:w-[485px] max-h-full z-10"
+                className="h-[450px] md:h-[440px] md:w-[385px] xl:h-[450px] xl:w-[385px] max-h-full z-10"
               />
             </div>
             <div
-              className={`text-white z-20 absolute top-[70px] right-[20px] max-w-[340px] md:top-[80px] md:right-0 md:left-[400px] lg:max-w-[550px] xl:max-w-[1000px] xl:top-[200px] ${
+              className={`text-white z-20 absolute top-[70px] right-[20px] max-w-[340px] md:top-[80px] md:right-0 md:left-[400px] lg:top-[160px] lg:max-w-[550px] xl:max-w-[700px] xl:top-[120px] ${
                 showBigText ? "opacity-100" : "opacity-0"
               } transition-opacity duration-500 ease-out`}
             >
@@ -78,7 +78,7 @@ const Quotes = ({ id }: { id: string }) => {
                 "
               </p>
 
-              <h2 className="text-lg md:text-3xl lg:6xl xl:text-7xl font-bold font-oswald pb-4 ">
+              <h2 className="text-lg md:text-3xl xl:text-5xl font-bold font-oswald pb-4 ">
                 {slides[activeSlideIndex].bigText}
               </h2>
 
@@ -125,7 +125,7 @@ const Quotes = ({ id }: { id: string }) => {
   return (
     <section
       id={id}
-      className="w-full min-h-[80vh] bg-[#DD1B5E] relative flex justify-center items-center pt-[80px] pl-[100px]"
+      className="w-full min-h-[80vh] lg:min-h-[60vh] bg-[#DD1B5E] relative flex justify-center items-center pt-[80px] pl-[100px]"
     >
       {displaySlides()}
       {displayDots()}

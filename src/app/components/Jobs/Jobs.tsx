@@ -7,7 +7,7 @@ const Jobs = ({ id }: { id: string }) => {
   return (
     <section
       id={id}
-      className="bg-[#1D1D1D] min-h-screen flex flex-col items-center justify-center pb-[40px] md:pb-[150px]"
+      className="bg-[#1D1D1D] min-h-screen flex flex-col items-center justify-center pb-[40px] md:pb-[150px] xl:pt-20"
     >
       <div className="flex flex-row pt-60 items-center justify-center gap-8 xl:pt-40">
         <img className="h-[50px] md:h-[40px]" src="dga-logo.png" alt="" />
