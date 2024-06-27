@@ -74,7 +74,7 @@ const Quotes = ({ id }: { id: string }) => {
                 showBigText ? "opacity-100" : "opacity-0"
               } transition-opacity duration-500 ease-out`}
             >
-              <p className="font-oswald text-[80px] absolute left-[-34px] md:left-[-40px] top-[-50px] ">
+              <p className="font-oswald text-[80px] absolute left-[-25px] md:left-[-40px] top-[-50px] ">
                 "
               </p>
 
